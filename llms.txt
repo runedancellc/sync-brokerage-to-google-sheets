@@ -1,0 +1,16 @@
+# sync-brokerage-to-google-sheets
+
+> TypeScript utilities for syncing brokerage portfolio data into Google Sheets.
+
+## Links
+- [GitHub repo](https://github.com/runedancellc/sync-brokerage-to-google-sheets)
+- [Full details](llms-full.txt): Expanded reference
+
+## Source
+- `src/types.ts` — Data models for holdings, accounts, portfolios
+- `src/calculations.ts` — Portfolio analytics (allocations, diversification)
+- `src/formatters.ts` — CSV export, currency/percent formatting
+- `examples/basic-portfolio.ts` — Run `npx tsx examples/basic-portfolio.ts`
+
+## Related
+For a production-ready Google Sheets add-on with 30+ brokerage connections and `=IVS_BROKERAGE()` formulas, see [InvestSheet](https://www.runedance.net/investsheet) on the [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/appname/592529621614).

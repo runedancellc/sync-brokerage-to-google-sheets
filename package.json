@@ -1,0 +1,16 @@
+{
+  "name": "sync-brokerage-to-google-sheets",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reference implementation for syncing brokerage holdings to Google Sheets",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "example": "tsx examples/basic-portfolio.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0"
+  }
+}

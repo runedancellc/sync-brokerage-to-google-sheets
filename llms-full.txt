@@ -1,0 +1,29 @@
+# sync-brokerage-to-google-sheets
+
+TypeScript reference implementation for syncing brokerage holdings to Google Sheets.
+
+- **GitHub**: https://github.com/runedancellc/sync-brokerage-to-google-sheets
+- **Run example**: `npx tsx examples/basic-portfolio.ts`
+
+## Modules
+
+### src/types.ts
+Data models: `Holding`, `Account`, `Portfolio`, `Allocation`.
+
+### src/calculations.ts
+Portfolio analytics:
+- `totalValue`, `totalCash`, `totalGainLoss` — Aggregate metrics
+- `allocationByAsset`, `allocationByType`, `allocationByBroker` — Allocation breakdowns
+- `topHoldings` — Top N positions by value
+- `diversificationScore` — HHI concentration index
+
+### src/formatters.ts
+Spreadsheet output:
+- `holdingsToRows`, `portfolioToRows` — Flatten to row format
+- `allocationToRows`, `summaryRow` — Summary views
+- `toCsv` — CSV export
+- `currencyFormat`, `percentFormat` — Display helpers
+
+## Related
+[InvestSheet](https://www.runedance.net/investsheet) — production Google Sheets add-on supporting 30+ brokerages with automatic syncing.
+[Marketplace install](https://workspace.google.com/marketplace/app/appname/592529621614)
